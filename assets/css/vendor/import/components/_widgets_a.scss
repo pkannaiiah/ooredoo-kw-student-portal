@@ -10,7 +10,7 @@ color:#ED1C24!important;
     margin-bottom: 40px;
 }
 .max-container {
-    max-width: 820px;
+    max-width: 398px;
     margin: 0 auto;
 }
 
@@ -136,7 +136,7 @@ color:#ED1C24!important;
 /* Global CSS ends*/
 .review-cont,
 .captureid-cont,
-.postpaid-cont,
+.student-portal,
 .enter-detail-cont {
     max-width: 540px;
     margin: 0 auto;
@@ -170,7 +170,10 @@ color:#ED1C24!important;
 
 .review-cont {
     .text-secondary {
+        font-family:$noto-reg;
+        font-size:14px;
         color: #221e20 !important;
+        line-height:19px;
     }
     .activesim {
         background-color: #f9f9f9;
@@ -431,7 +434,7 @@ color:#ED1C24!important;
         }
     }
 }
-.postpaid-cont {
+.student-portal {
     .posttitle-cont {
         margin-bottom: 30px;
         .sec-title{
@@ -481,7 +484,7 @@ color:#ED1C24!important;
 
 .global-tilte-cont {
     .sec-title {
-        font-family: $thintext;
+        font-family:$bodytext;
         font-size: 22px;
         margin-bottom: 5px;
     }
@@ -649,10 +652,10 @@ color:#ED1C24!important;
     .captureid-cont .approve-cont {
         margin-bottom: 150px;
     }
-    .postpaid-cont .posttitle-cont {
+    .student-portal .posttitle-cont {
         margin-bottom: 20px;
     }
-    .postpaid-cont .form-details {
+    .student-portal .form-details {
         margin-bottom: 120px;
     }
     .captureid-cont {
