@@ -49,7 +49,7 @@ input[type=number] {
   .btn-close{border:0px solid $secondary; background-color:transparent;}
 }
 .checkbox-comp{
-  label{font-size:$x-small!important;line-height:20px!important;}
+  label{font-size:$medium!important;line-height:20px!important;}
   .chebox-comp{
     input[type="checkbox"] + label::before{border-radius:50%;}
     a{color:$primary;margin-left:5px;}
@@ -89,6 +89,29 @@ input[type=number] {
 .plan_body
 {
   padding: 10px;
+}
+.font14bold
+{
+  font-family: $headding;
+  font-size: $small;
+  color: $secondary;
+}
+.font14reg
+{
+  font-family: $bodytext;
+  font-size: $small;
+  color: $secondary;
+}
+.font16reg
+{
+  font-family: $bodytext;
+  font-size: $medium !important;
+  color: $secondary;
+}
+.plan{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 @media (max-width: 480px){
