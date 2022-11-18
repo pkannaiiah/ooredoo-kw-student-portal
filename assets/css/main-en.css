@@ -382,6 +382,11 @@ input[type=number] {
   align-items: center;
   position: absolute;
   bottom: -57px;
+  width: 100%;
+  background: #E9E9E9;
+  text-align: center;
+  justify-content: center;
+  display: flex;
 }
 .student-top-comp img {
   width: 39px;
@@ -2367,6 +2372,9 @@ a.has-sub[aria-expanded=true]:after {
 }
 .pay-cont .filter-comp .filte-plane {
   width: 100%;
+}
+.pay-cont .filter-comp .filte-plane h5 {
+  font-size: 14px;
 }
 .pay-cont .filter-comp li {
   width: 100%;

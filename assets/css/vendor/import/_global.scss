@@ -80,6 +80,11 @@ input[type=number] {
   align-items: center;
   position: absolute;
   bottom:-57px;
+  width: 100%;
+  background:#E9E9E9;
+  text-align: center;
+  justify-content: center;
+  display: flex;
   img{width:39px; height:39px;}
 }
 .plan_border
