@@ -408,6 +408,9 @@ input[type=number] {
   max-width: 398px;
   margin: 0px auto;
 }
+.bottom_bg_section_container img {
+  width: 398px;
+}
 
 .plan_border {
   border-radius: 4px;
