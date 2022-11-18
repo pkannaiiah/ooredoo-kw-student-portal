@@ -1,0 +1,41 @@
+.inprogressbar-comp{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width:500px;
+    margin:0px auto;
+    .tabs-div{width:80px;background:#ccc;height:8px;}
+    .tab-active{background:#ed1c24;}
+}
+
+.comp-esim-sec{
+    .compdiv{
+        border:1px solid #BEBEBE;border-radius:10px;padding:20px;
+        display:flex;justify-content:space-between;align-items: center;
+        .comp-user-id{
+            .divrow1{
+            display: flex;
+            align-items: center;
+            margin-bottom:10px;
+            label{font-weight: 600;}
+            img{width:25px;margin-right:16px;}
+        }
+        }
+        .right-arrow{
+            img{width:8px;}
+        }
+    }
+}
+
+//@at-root
+.dflex-card-border{
+    border:1px solid #ccc;
+    border-radius:4px;
+    .cont-dflex{display: flex; justify-content: space-between;}
+}
+
+.esim-cont2 {
+    display: flex;
+    align-items: center;
+    span{margin-left:10px;}
+}

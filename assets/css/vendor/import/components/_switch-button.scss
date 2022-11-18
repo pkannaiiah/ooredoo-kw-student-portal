@@ -1,0 +1,23 @@
+
+/*swich button show and hide*/
+.switch-disabled{
+    input:checked + .slider {background-color: #cd8285;}
+    .slider:before {background-color: $d-gray;}
+  }
+  .custom-switch {padding-left:2.25rem;text-align:right;}
+  #Slider{}
+  #Actual{color:$secondary;padding:0px 10px;}
+  .slideup, .slidedown{
+          max-height:0;            
+          overflow-y:hidden;
+          -webkit-transition: max-height 0.5s ease-in-out;
+          -moz-transition: max-height 0.5s ease-in-out;
+          -o-transition: max-height 0.5s ease-in-out;
+          transition: max-height 0.5s ease-in-out;
+  }
+  .slidedown{max-height:60px;}
+  .divhide-sec{
+    width:100%;height:auto;margin-top:20px;
+    label{font-weight:600;}
+  }
+  /*swich button show and hide*/

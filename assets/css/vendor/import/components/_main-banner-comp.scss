@@ -1,0 +1,16 @@
+.main-banner-comp{
+img{width:100%;}
+.main-web-banner{display:block;} 
+.main-mob-banner{display:none;}
+}
+.swiper-button-next, .swiper-button-prev{color:$primary;}
+@media (max-width: 768px){
+.main-banner-comp{
+margin-top:96px;
+.main-web-banner{display:none;}
+.main-mob-banner{display:block;}
+}
+}
+@media (max-width: 480px){
+.main-banner-comp{margin-top:86px;}
+}

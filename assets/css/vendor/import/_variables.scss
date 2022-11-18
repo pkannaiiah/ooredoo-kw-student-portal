@@ -1,0 +1,172 @@
+ // GLOBAL VARIABLES
+ @font-face {
+    font-family: 'ooredoo-heavy';
+    src: url('fonts/Ooredoo-Heavy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+ @font-face {
+    font-family: 'NotoRegular';
+    src: url('fonts/noto_sansregular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Notolight';
+    src: url('fonts/NotoSans-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Notobold';
+    src: url('fonts/noto_sansbold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+//fontas
+@font-face {font-family: "Font Awesome 5 Free Regular";
+   src: url("fonts/font-s/061b39e95e1a0bd25e8d294af8596b2a.eot"); /* IE9*/
+   src: url("fonts/font-s/061b39e95e1a0bd25e8d294af8596b2a.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+   url("fonts/font-s/061b39e95e1a0bd25e8d294af8596b2a.woff2") format("woff2"), /* chrome、firefox */
+   url("fonts/font-s/061b39e95e1a0bd25e8d294af8596b2a.woff") format("woff"), /* chrome、firefox */
+   url("fonts/font-s/061b39e95e1a0bd25e8d294af8596b2a.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+   url("fonts/font-s/061b39e95e1a0bd25e8d294af8596b2a.svg#Font Awesome 5 Free Regular") format("svg"); /* iOS 4.1- */
+ }
+
+ /*27-06-22 st*/
+@font-face{
+	font-family:'Rubik-Regular';
+	src:url(fonts/Rubik-Regular.woff) format("woff");
+	font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+	font-family:'Rubik-Medium';
+	src:url(fonts/Rubik-Medium.woff) format("woff");
+	/*font-weight: normal;*/
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+	font-family:'Rubik-SemiBold';
+	src:url(fonts/Rubik-SemiBold.woff) format("woff");
+	/*font-weight: normal;*/
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+	font-family:'Rubik-Bold';
+	src:url(fonts/Rubik-Bold.woff) format("woff");
+	/*font-weight: normal;*/
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+	font-family:'MyriadPro-Regular';
+	src:url(fonts/MyriadPro-Regular.woff) format("woff");
+	/*font-weight: normal;*/
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+	font-family:'Outfit-Black';
+	src:url(fonts/Outfit-Black.woff) format("woff");
+	/*font-weight: normal;*/
+    font-style: normal;
+    font-display: swap;
+}
+/*27-06-22 end*/
+
+// Ooredoo Font family
+$headding:'ooredoo-heavy', Arial, Helvetica, sans-serif;
+$bodytext:'NotoRegular', Arial, Helvetica, sans-serif;
+$thintext:'Notolight', Arial, Helvetica, sans-serif;
+$boldtext:'Notobold', Arial, Helvetica, sans-serif;
+
+$rubik-regular:"";
+
+$xx-small:10px;/*10px*/
+$x-small:12px;/*12px*/
+$small:14px;/*$small*/
+$medium:16px;/*16px*/
+$large:18px;/*18px*/
+$x-large:20px;/*20px*/
+$xx-large:25px;/*24px*/
+$xxx-large:30px;/*30px*/
+$sec-head:35px;/*35px*/
+
+// scss-docs-start theme-color-variables
+$primary: #ed1c24 ;
+$secondary: #221E20;
+// scss-docs-end theme-color-variables
+
+// Section: Variables
+$color-white: #ffffff;
+$color-light: #f1f5f8;
+$color-black: #221E20;
+$color-night: #001632;
+$color-blue: #2196f3;
+$white: #fff;
+$dark-gray: #858585;
+$gray: #EBEBEB;
+$d-gray:#BCBCBC;
+
+$shadow-normal: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+$shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+//css
+hr{color:#DFDFE1;}
+.mr-2{margin-right:2rem;}
+.mb-30{margin-bottom:30px;}
+.w80{width:80%}
+.headtop-mt110{margin-top:95px;}
+.headtop-mt160{margin-top:190px;}
+
+//mobile menu
+@keyframes slideLeft {
+   0% {
+      opacity: 0;
+      transform: translateX(100%);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0%);
+   }
+}
+
+
+@keyframes slideRight {
+   0% {
+      opacity: 1;
+      transform: translateX(0%);
+   }
+   100% {
+      opacity: 0;
+      transform: translateX(100%);
+   }
+}
+
+a,
+button {
+   font-family: inherit;
+   font-size: inherit;
+   line-height: inherit;
+   cursor: pointer;
+   border: none;
+   outline: none;
+   background: none;
+   text-decoration: none;
+
+@media only screen and (max-width: 768px) {
+      cursor: default !important;
+      border: none;
+      outline: none;
+   }
+}

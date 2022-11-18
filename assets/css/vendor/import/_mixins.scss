@@ -1,0 +1,50 @@
+// GLOBAL MIXINS
+%cardbox-shadow {
+  box-shadow: 0 1px 10px 0 #0000001A;
+  background-color:$white;
+  border-radius:8px;
+}
+
+//Extends
+%primary-font{
+  font-family: $headding;
+}
+%noto-regular{
+  font-family: $bodytext;
+}
+%noto-bold{
+  font-family: $boldtext;
+}
+%noto-light{
+  font-family: $thintext;
+  font-weight: 400;
+  color: $secondary;
+}
+%primary-color{
+  color: $primary;
+}
+%secondary-color{
+  color: $secondary;
+}
+%flex_grp_between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+%flex_grp_center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+%flex_grp_align_center{
+  display: flex;
+  align-items: center;
+}
+%flex_grp_align_start{
+  display: flex;
+  align-items: flex-start;
+}
+%justifycont-df-sb{
+  display:flex;
+  justify-content:space-between;
+}

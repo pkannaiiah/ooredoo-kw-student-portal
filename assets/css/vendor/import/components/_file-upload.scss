@@ -1,0 +1,34 @@
+.file-upload-comp{
+    .file-upload-img-icon img{width:40px;height:40px;margin-bottom:5px;}
+    .file-upload{background-color:$white;width:100%;margin:0 auto;}
+    .file-upload-btn{width:100%;margin:0;color:$white;background:$primary;border:none;padding:10px;border-radius:4px;border-bottom:2px dashed #99AFF8;transition:all .2s ease;outline:none;}
+    .file-upload-btn:hover{background:$white;color:$white;transition:all .2s ease;cursor: pointer;}
+    .file-upload-btn:active{border:0;transition:all .2s ease;}
+    .file-upload-content{display:none;text-align:center;border:2px dashed #99AFF8;}
+    .file-upload-input{position:absolute;margin:0;padding:0;width:100%;height:100%;outline:none;opacity:0;cursor:pointer;}
+    .image-upload-wrap{margin-top:10px;border:2px dashed #99AFF8;background-color:#F7F7F7;position:relative;border-radius:4px;}
+    .image-dropping,
+    .image-upload-wrap:hover{background-color:$white;border:2px dashed $color-night;}
+    .image-title-wrap{margin-top:30px;color:$color-black;}
+    .image-title-wrap span{margin-right:25px;color:$color-black;width:230px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;float:left;text-align:left;}
+    .image-title-wrap img{width:10px;}
+    .drag-text{text-align:center;padding:10px;}
+    .drag-text h3{font-weight:100;color:$primary;padding:60px 0;}
+    .file-upload-image{max-height:200px;max-width:200px;margin:auto;padding:10px;}
+    .remove-image{width:100%;text-align:right;margin:0;color:$primary;background:$white;border:none;padding:0px;border-radius:4px;border-bottom:0px dashed $primary;transition:all .2s ease;outline:none;}
+    .remove-image:hover{background:$white;color:$primary;transition:all .2s ease;cursor: pointer;}
+    .remove-image:active{border:0;transition:all .2s ease;}
+    .note-text{font-size:$xx-small;margin-top:6px;}
+    }
+
+    @media (max-width:425px) {
+        .file-upload-comp{
+          .image-title-wrap span{width:130px;margin-right:10px;}
+          }
+    }
+    @media (max-width:414px) {
+        .file-upload-comp{
+          .image-title-wrap{margin-top:20px;color:$color-black;}
+          .image-title-wrap span{width:120px;margin-right:10px;}
+        }
+    }

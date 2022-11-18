@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Ooredoo-KW-Studen-Portal</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1,
+            maximum-scale=1, minimum-scale=1, width=device-width" />
+        <!--/* -- Brand Favicon -- */-->
+        <link rel="shortcut icon" href="assets/images/favicon.ico" />
+        <!-- Bootstrap CSS -->
+        <link href="assets/css/vendor/vendors/bootstrap/bootstrap.min.css"
+            rel="stylesheet">
+        <link href="assets/css/vendor/vendors/swiper/swiper.min.css"
+            rel="stylesheet">
+        <!--custom css-->
+        <link href="assets/css/main-en.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Section: Header -->
+        <header class="header">
+            <!--top header-->
+            <div class="top-header">
+                <div class="container">
+                    <div class="d-flex justify-content-between">
+						<div class="">
+						<a href="" class="active"> Personal  </a>
+						<a href=""> Business  </a>
+					</div>
+					<div class="">
+					<a href="" class="ml-auto"> English </a>
+				  </div>
+				</div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="wrapper">
+                    <div class="header-item-left">
+                        <div class="brand">
+                            <picture>
+                                <img src="assets/images/ooredoologo.svg" alt="ana_logo" title="ana_logo" class="ooredoo-logo" />
+                            </picture>
+                        </div>
+                    </div>
+                    <!-- Section: Navbar Menu -->
+                    <div class="header-item-center">
+                        <div class="overlay"></div>
+                        <nav class="menu ml-auto">
+                            <div class="menu-mobile-header">
+                                <button type="button" class="menu-mobile-arrow">
+                                    <i class="ion ion-ios-arrow-back"></i>
+                                </button>
+                                <div class="menu-mobile-title"></div>
+                                <button type="button" class="menu-mobile-close">
+                                    <img
+                                        src="assets/images/icons/close-icon.svg"
+                                        alt="close" title="close" />
+                                </button>
+                            </div>
+                            <!--ul class="menu-section">
+                                <li class="menu-item-has-children">
+                                    <a href="#">Ooredoo Website</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Build My Plan </a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Why Ooredoo?</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Special Plans </a>
+                                </li>
+                                <li><a href="#">Order Tracker</a></li>
+                                <li>
+                                    <a style="font-family: 'OoredooArabic-Heavy','OoredooArabic','ooredoo-Heavy','noto_sansregular';" href="#" ng-click="changlangurl('ar')">عربى</a>
+                                </li>
+                            </ul-->
+                        </nav>
+                    </div>
+
+                    <div class="">
+                        <button type="button" class="menu-mobile-trigger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main headtop-mt160">
+            <div class="max-container">
+
+                <div class="container">
+                    <div class="postpaid-cont">
+                        <div class="form-details">
+
+                        <div class="global-tilte-cont mb-40">
+                            <p class="sec-title">How can we reach you?</p>
+                            <h5 class="text-secondary m-0">Please provide your info where we can contact and inform you about your order</h5>
+                        </div>
+
+                        <div class="post-form mb-30">
+                            <div class="mb-3">
+                                <form>
+                                <label class="form-label">Email address</label>
+                                <input type="email" class="form-control form-control-lg" placeholder="" onkeydown="limit(this, 25);" onkeyup="limit(this, 25);">
+                                <div id="emailHelp" class="form-text blet-sec">
+                                    <label> Note: </label> Its important to enter a valid Email address in order to receive the purchase confirmation Email</div>
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label">How can we reach you?</label>
+                                <input type="text" class="form-control form-control-lg" oninput="numberOnly(this.id);" placeholder="Enter call back number" class="test_css" maxlength="12" id="flight_number" name="number"/>
+                                <div id="emailHelp" class="form-text blet-sec">
+                                    <label>Note: </label> Please enter a valid Phone number to ensure accurate delivery</div>
+                              </div>
+                            </form>
+                        </div>
+
+                        <div class="global-tilte-cont posttitle-cont">
+                            <p class="sec-title">Delivery Address</p>
+                            <h6 class="text-secondary m-0">Have your new SIM delivered on your doorstep</h6>
+                        </div>
+
+                        <div class="pasi-cont mb-3">
+                            <h5 class="text-secondary m-0">Use my PACI address</h5>
+                            <div class="cus-switch">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="post-form mb-40">
+                            <div class="mb-3">
+                                <label class="form-label">Governorate*</label>
+                                <select class="form-select form-select-lg mb-3">
+                                    <option class="slected1" value="" disabled selected>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label">Area*</label>
+                                <select class="form-select form-select-lg mb-3" >
+                                    <option class="slected1" value="" disabled selected>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label">Block*</label>
+                                <input type="text" class="form-control form-control-lg" placeholder="" onkeydown="limit(this, 30);" onkeyup="limit(this, 30);">
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label">Street*</label>
+                                <input type="text" class="form-control form-control-lg" placeholder="" onkeydown="limit(this, 30);" onkeyup="limit(this, 30);">
+                              </div>
+                              <div class="row mb-3">                                
+                                <div class="col-6">
+                                <label class="form-label">Building*</label>
+                                  <input type="text" class="form-control form-control-lg" onkeydown="limit(this, 30);" onkeyup="limit(this, 30);">
+                                </div>
+                                <div class="col-6">
+                                <label class="form-label">Floor</label>
+                                  <input type="text" class="form-control form-control-lg" onkeydown="limit(this, 30);" onkeyup="limit(this, 30);">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Additional direction (optional)</label>
+                                <input type="text" class="form-control form-control-lg" placeholder="" onkeydown="limit(this, 30);" onkeyup="limit(this, 30);">
+                            </div>
+
+                            <!--new t&c Section st-->
+                            <div class="checkbox-comp mb-4">
+                                <div class="d-flex vip-number-radiobtn vip-number-gender mt-2">
+                                <div class="radio mr-4 chebox-comp">
+                                    <input type="checkbox" id="shamel-pro" name="shamel-pro" value="Shamel Pro">
+                                  <label for="shamel-pro">
+                                      I agree to Ooredoo's 
+                                      <a data-bs-toggle="modal" data-bs-target="#exampleModal"> Terms & Conditions. </a>
+                                    </label>
+                                </div>
+                             </div>
+                            </div>
+                        <!--new t&c Section end-->
+                         
+                    </div>
+                    </div>
+
+                        <div class="foo-fixed">
+                            <div class="btn-cont d-flex justify-content-between">
+                                <a class="btn btn-secondary btn-secondary-oh">Back</a>
+                                <a class="btn btn-primary btn-primary-oh ">Continue</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!---->
+        </main>
+
+        <!--new popup sec st-->
+<div class="modal fade tandc-section" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Terms and Conditions</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-bod">
+          <div class="termsandc-textcont">
+            <P>
+                Welcome to <b> OOREDOO </b> When you decide to sign the present contract or activate or use our services, it means that you approved to comply with the General Terms and Conditions of <b> OOREDOO </b> Services. Therefore, kindly read the following terms and conditions thoroughly to understand your legal rights.
+            </P>
+            <div>
+                <p>
+                    <label> Definitions: </label><br>
+                   <b> OOREDOO </b>
+                </p>
+                <div class="tc-text-sec">
+                    <ul>
+                        <li>
+                            - <b><u> Customer (You): </u></b> The person or party that concludes an agreement with <b> OOREDOO </b> in order to benefit from a service and pays a sum in return of the aforesaid service.
+                        </li>
+                        <li>
+                            - <b><u> SIM Card: </u></b> It is the main communication component part provided by <b> OOREDOO </b> or one of its authorized distributors allowing the Customer to benefit from the service of <b> OOREDOO </b>.
+                        </li>
+                        <li>
+                            - <b><u> Contract: </u></b> It is the paper or electronic form signed by the Customer in order to ask for or activate or use the service of <b> OOREDOO </b>. The Contract includes all documents signed by the Customer or written applications or approvals made through the electronic devices (phone call or SMS or website) or other registered communication mean.
+                        </li>
+                        <li>
+                            - <b><u> Service: </u></b> It is any service(services) – including but not limited to – (phone calls, local and international messages, voice messages and data) provided by <b> OOREDOO </b> directly to its Customers through OOREDOO branches or one of its authorized distributors.
+                        </li>
+                        <li>
+                            - <b><u> Fees: </u></b> It is the prices list set by <b> OOREDOO </b> including the special conditions and provisions of the service..
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p>
+                    <b>The aforementioned definitions shall constitute an integral part of the present contract. The following articles shall form the provisions of the contract concluded with the Customer regarding the service of <b> OOREDOO </b> in addition to any program, content or device related thereto.</b>
+                </p>
+                </div>
+  
+                <div class="sec-tandc-01">
+                    <div class="tandc001">
+                       <label> 1. Services of <b> OOREDOO </b>:</label>
+                            <p>
+                                <b> OOREDOO </b>  is a mobile telecommunications provider in the State of Kuwait. Any person, company, ministry and institution may benefit from this service in addition to any other entity legally registered in the territory in return of settling the payments agreed upon in the contract.
+  However, OOREDOO does not provide its services everywhere in the State of Kuwait. As well as, <b> OOREDOO </b> shall not be held liable for any problem, delay, failure or interruption occurring at the network at any time whatsoever regardless of the type of the service. <b> OOREDOO </b> shall not be obliged to pay any indemnification for any loss supported by the Customer as a result thereof. As well as, <b> OOREDOO </b> shall not be held liable for any error or failure of any part of the Customer’s device.
+                            </p>
+                    </div>
+  
+                    <div class="tandc001">
+                        <label>2.	Fees: </label>
+                        <p><b> OOREDOO </b> shall be entitled to impose the following fees:</p>
+                        <ul>
+                            <li> Operation fees are the fees imposed to obtain the SIM Card as well as PIN and PUK codes.</li>
+                            <li>
+                                Subscription fees are the fees paid on a regular basis in advance as defined by <b> OOREDOO </b>.
+                            </li>
+                            <li>
+                                The fees of the service used by the Customer – including but not limited to (local, international, voice and data services) – in return of a cost unit specified in accordance with the tariff system of <b> OOREDOO </b>.
+                            </li>
+                            <li>
+                                Roaming fees refer to the service used by the Customer outside the State of Kuwait. However, the fees of the roaming service are determined by foreign networks.
+                            </li>
+                            <li>
+                                Administrative fees are the fees imposed in case of a settlement delay, service cancellation or amendments made to the data of the contract.
+                                <br>
+                               <b> Note: </b> Any adjustment of the fees shall be binding and effective for every Customer once it is published by different media means or on the website of the Company. The Customer shall not be entitled to file any objection in this regard under the pretense of not being notified of the fees’ adjustment. As well as, it shall be noted that the amendment of the fees shall not be considered as a reason to terminate the contract before the end of its term. 
+                            </li>
+                        </ul>
+                    </div>
+  
+                    <div class="tandc001">
+                        <label>3. Issuance of Bills: </label>
+                             <p>
+                               <b> OOREDOO </b> issues a monthly bill in the name of each Customer including the total due fees. The bill shall include the different fees of the services to which the Customer subscribed or used during the last months except for the roaming services and other kinds of services to be listed in the bills of (90) days. However, the Customer shall pay all the bills immediately after receiving a notice in this regard without any objection whatsoever in accordance with the bill. The bills of <b> OOREDOO </b> are final and represent the real account and conclusive evidence regarding the due sums to be settled by the Customer unless the latter files a complaint pursuant to article (19).
+                             </p>
+                    </div>
+  
+                    <div class="tandc001">
+                        <label>4.	Payments: </label>
+                             <p>
+                                -	Postpaid: The Customer shall settle the entire monthly bill on its maturity date whereas the Customer is held solely liable in this regard. In the event the Customer abstained or failed to settle the bill on its maturity date, OOREDOO reserves the right to suspend the services of the Customer until the complete settlement of the due bills. As well as, the Company shall be entitled to impose suitable administrative fees in such a case. In the event no payments were transferred within (90) days counting from the date of maturity date of the bill, OOREDOO reserves the right to terminate the contract and reallocate the phone number to another Customer without the need for a notice in this regard. <b> OOREDOO </b> also shall be entitled to collect all the due sums including but not limited to the administrative and judicial fees in addition to the actual attorney fees).
+                             </p>
+                             <p>
+                                -	Prepaid: The service shall remain valid as long as it is recharged. Each recharge operation shall be related to its validity term whereas the last day of the validity term shall be the expiry date. The expiry date shall be followed by a grace period estimated by the Company provided that it shall not be less than (90) days during which the Customer shall recharge the account or else the Customer may lose the line without the need for a notice. <b> OOREDOO </b> reserves the right to reallocate the line in accordance with its internal policy. The Customer shall not be entitled to claim any remaining account whereas the account is owned by <b> OOREDOO </b>.
+                             </p>
+                    </div>
+  
+                    <div class="tandc001">
+                        <label>5.	Using <b> OOREDOO </b> Services and Devices: </label>
+                             <p>
+                                The Customer agrees to use the service of <b> OOREDOO </b> on its own liability. The Customer shall not be entitled to use or try to use or delegate others to use the service or devices provided by <b> OOREDOO </b> in any way which may lead to the following:
+                             </p>
+                             <div class="listul-sec">
+                                 <ul>
+                                     <li>1.	Violating the law and/or conditions and provisions of the present contract concluded with <b> OOREDOO </b>.</li>
+                                     <li>2.	Annoying authorities or destabilizing security.</li>
+                                     <li>3.	Sending, receiving, uploading or using any material which violates the public order and rules of conduct or harms the reputation and honor or any information which may form a wrong belief leading to deception and fraud. </li>
+                                     <li>4.	Affecting the provision of the service to the Customer of <b> OOREDOO </b> in a negative way. </li>
+                                     <li>5.	Violating the copyrights or other intellectual rights.</li>
+                                     <li>6.	Accessing or trying to access computer systems, networks or any other information resource illegally or without the approval of the owner of the information or resources.</li>
+                                 </ul>
+                             </div>
+                    </div>
+  
+                    <div class="tandc001">
+                        <label>6. Fair Usage Policy:</label>
+                             <p>
+                                All the Customers of <b> OOREDOO </b> shall be subject to the Fair Usage Policy in order to guarantee providing the service to the Customer on a continuous basis. Therefore, <b> OOREDOO </b> shall control the usage of the service by the Customer. In the event the Customer failed to comply with the Fair Usage Policy – in accordance with the estimation of <b> OOREDOO </b> – which affected negatively on <b> OOREDOO </b> network or the level of the service provided to the other Customers, <b> OOREDOO </b> shall be entitled to take all necessary procedures including but not limited to adjusting the type of the service or cancelling the service without the need for a notice while binding the Customer to settle all the fees resulting from such procedures. However, the Customer of <b> OOREDOO </b> shall not be held liable for legal and financial consequences resulting thereof.
+                             </p>
+                    </div>
+  
+                    <div class="tandc001">
+                        <label>7. Termination:</label>
+                             <p>
+                                Once the Customer activates the SIM Card or subscribes at the service, he/she shall be entitled to ask for the termination of the Contract. As a result thereof, <b> OOREDOO </b> reserves the right to impose convenient fees equal to the due sum and cancellation fees of the Contract in addition to any due fees related to other offers included in a Contract.
+                             </p>
+                    </div>
+  
+                    <div class="tandc001">
+                        <label>8. Robbery or Loss of the SIM Card:</label>
+                             <p>
+                                In the event the SIM Card was robbed or lost, the Customer undertakes to settle all the fees and bills related to the service until he/she send an official notice in this regard to <b> OOREDOO </b> in order for the Company to stop the service in accordance with article (17) of the Contract.
+                             </p>
+                    </div>
+  
+                    <div class="tandc001">
+                        <label>9. Eligibility:</label>
+                             <p>
+                                The Customer shall prove his/her age and identity by submitting an original civil card and/or other document or procedure required by <b> OOREDOO </b> in accordance with the following:
+                             </p>
+                             <p>
+                                -	Postpaid Lines: The Customer shall be (21) years old and above or as may be defined by <b> OOREDOO </b>.
+                             </p>
+                             <p>
+                                -	Prepaid Lines: The Customer shall be (12) years old and above or as may be defined by <b> OOREDOO </b>.
+                             </p>
+                             <p>
+                                -	Data Services Lines: The Customer shall be (18) years old and above or as may be defined by <b> OOREDOO </b>. Not all Customers enjoy the capacity to receive the service due to the credit history or payments record at <b> OOREDOO </b> or any other reason whatsoever without prejudice to the content of the present article. 
+                             </p>
+                    </div>
+                    
+                    <div class="tandc001">
+                        <label>10.	Termination:</label><br>
+                        <b>First: Termination Right of OOREDOO :</b>
+                        <br>
+                             <p>
+                               <b> OOREDOO </b> shall be entitled to terminate the contract in one of the following cases:
+                             </p>
+                             <ol>
+                                 <li>
+                                    In case <b> OOREDOO </b> finds that the information included in the contract are incomplete or wrong or fraudulent.
+                                 </li>
+                                 <li>
+                                    In case the Customer used equipment interfering with <b> OOREDOO </b> network or not found to be in conformity with the Kuwaiti and international standards.
+                                 </li>
+                                 <li>
+                                    In case the Customer violates any of the conditions and provisions of the present contract in particular article (6) of the same (Using <b> OOREDOO </b> services and devices).
+                                 </li>
+                                 <li>
+                                    In case of force majeure or national crisis or state of emergency or issuance of a resolution made by the competent authorities binding <b> OOREDOO </b> to suspend its services.
+                                 </li>
+                             </ol>
+                    </div>
+  
+                    <div class="tandc001">
+                        <b> OOREDOO </b> reserves the right to take any of the following procedures:
+                        <ol>
+                            <li> Immediate termination of the contract without the need for a warning. </li>
+                            <li> Temporary suspension of the service or the account of the Customer. </li>
+                            <li> Collection of all due sums and administrative fees from the Customer or third parties when necessary. </li>
+                            <li> Recovery of the costs afforded by <b>OOREDOO</b> due to the misuse of its network.</li>
+                        </ol>
+                    </div>
+  
+                    <div class="tandc001">
+                        <p><b> Second: Termination Right of the Customer: </b></p>
+                        <p>In the event the Customer asks to terminate the contract or transfer the number to another operator, <b> OOREDOO </b> shall be entitled to impose convenient fees equal to the due sum of the usage and cancellation fees of the Contract in addition to any due fees or numbers’ value or devices related to other offers included in a Contract. </p>
+                    </div>
+  
+                    <div class="tandc001">
+                        <label>11.	Numbers Portability/ Transfer:</label><br>
+                             <ol>
+                                 <li>
+                                    In the event the line will be transferred to another operator during the commitment period to any of the services or offers, the Customer shall settle the remaining monthly subscriptions and the discount value of the line in addition to the remaining installments of the monthly line value.
+                                 </li>
+                                 <li>
+                                    In the event the line will be transferred to another operator during the commitment period to the cash offer, the Customer shall settle the remaining monthly subscriptions value and the discount value of the line.
+                                 </li>
+                             </ol>
+                    </div>
+  
+                    <div class="tandc001">
+                        <label>12.	Phone Numbers and Transferability to others:</label><br>
+                             <ol>
+                                 <li>
+                                    The Parties of the present contract mutually agreed that the Customer does not own the phone line listed in the present contract whereas he/she shall only be allowed to use it by <b> OOREDOO </b> in accordance with the laws enforced in the State of Kuwait. 
+                                 </li>
+                                 <li>
+                                    The Customer shall be entitled to transfer his/her phone line to another person following the prior approval of <b> OOREDOO </b> in this regard in accordance with the applied fees and terms.
+                                 </li>
+                             </ol>
+                    </div>
+  
+                    <div class="tandc001">
+                        <label>13.	Personal Information and Data:</label><br>
+                             <ol>
+                                 <li>
+                                    The personal information and data required for the Contract are deemed as necessary in order to provide the Customer with the service. <b> OOREDOO </b> will save and use the aforementioned information and data to prepare the service and send the bills related to the usage of the service by the Customer as well as to respond to the inquiries or available service offers. When the Customer signs the Contract, it means that he/she found the information included therein provided by the latter to the Company correct, accurate and complete. The Customer undertakes to inform <b> OOREDOO </b> of any changes of the aforementioned information without any liability on behalf of the latter. 
+                                 </li>
+                                 <li>
+                                    <b> OOREDOO </b> undertakes to protect the personal information of the Customer. As well as, <b> OOREDOO </b> shall only collect, use or publish any personal information about the Customer following the approval of the latter and in accordance with the laws enforced in the State of Kuwait. 
+                                 </li>
+                             </ol>
+                    </div>
+  
+                    <div class="tandc001">
+                        <label>14.	Personal Identification Service:</label><br>
+                        <p>
+                            The Personal Identification Service is available through the mobile phone whereas the Customer selects a secret code composed of four numbers related to the personal identification certificate in accordance with the procedures of the Company.
+                        </p>
+                    </div>
+  
+                    <div class="tandc001">
+                        <label>15.	Liability of <b> OOREDOO </b>:</label><br>
+                             <ol>
+                                 <li>
+                                    <b> OOREDOO </b> shall be liable for providing the service agreed upon to its Customers.
+                                 </li>
+                                 <li>
+                                    <b> OOREDOO </b> shall provide the Customer with the secret code of the SIM Card which shall be saved in a confidential manner upon concluding the Contract.
+                                 </li>
+                             </ol>
+                    </div>
+  
+                    <div class="tandc001">
+                        <label> 16.	Liability of the Customer: </label><br>
+                             <ol>
+                                 <li>
+                                    The Customer shall keep the SIM Card in a good condition and avoid losing or damaging it. He/she shall also keep the secret code confidential and avoid disclosing it before others in any case whatsoever whereas <b> OOREDOO </b> shall not be held liable for any operations or transactions made by others.
+                                 </li>
+                                 <li>
+                                    The Customer shall be held liable for using the SIM Card and secret code in person or by others.
+                                 </li>
+                                 <li>
+                                    3)	In the event the Customer lost the SIM Card or the mobile phone, he/she shall notify <b> OOREDOO </b> immediately by calling the Customers Service Center of <b> OOREDOO </b> in order to clear his/her liability after suspending the service from the SIM Card. 
+                                 </li>
+                             </ol>
+                    </div>
+  
+                    <div class="tandc001">
+                        <label> 17.	Amendments: </label><br>
+                        <p>
+                        <b> OOREDOO </b>reserves the right to change or amend the provisions of the present Contract from time to time when necessary. Any change or amendment shall be binding to the Client when published or announced by different media means or company’s websites.
+                        </p>
+                    </div>
+  
+                    <div class="tandc001">
+                        <label>18.	Objections and Complaints: </label><br>
+                             <ol>
+                                 <li>
+                                    The Customer shall be entitled to object to the monthly due bills by submitting a written request to <b> OOREDOO </b> or calling the Customers Service Department on (121) within (28) days from the maturity date of the bill. In the event the Customer did not file any objection in this regard during the aforementioned period, it shall be considered as an acknowledgment from his side stating that the bill is correct whereas no objections shall be accepted after the end of the aforementioned time limit.
+                                 </li>
+                                 <li>
+                                    The Customer shall be entitled to present a complaint regarding the service by submitting a written request to <b> OOREDOO </b> or calling the Customers Service Department on (121).
+                                 </li>
+                             </ol>
+                    </div>
+  
+                    <div class="tandc001">
+                        <label>19.	Force Majeure and Out of Control Circumstances:</label><br>
+                        <p>
+                            <b> OOREDOO </b> may not be able to comply with the provisions of the present contract or to offer the service due to Out of Control Circumstances including but not limited to the following – act of God, delay or incompliance by others or natural disasters (such as weather, earthquakes, floods, fire) or intended disasters (turbulence, war, civil disturbances, revolutions, properties confiscation, embargo, strikes, electrical defect, governmental procedures or any other resolution made by the competent Court). In such cases, <b> OOREDOO </b> shall not be held liable for not providing the Customer with the service agreed upon in the Contract. <b> OOREDOO </b> will do everything possible to provide the Customers with the service as fast as possible.
+                        </p>
+                    </div>
+  
+                    <div class="tandc001">
+                        <label>20.	Duration:</label><br>
+                        <p>
+                            The Contract shall remain valid until either party decides to terminate it or replace it with another Contract or amend it in accordance with the enforced law.
+                        </p>
+                    </div>
+  
+                    <div class="tandc001">
+                        <label>21.	Applicable Law:</label><br>
+                        <p>
+                            The Contract shall be subject to the laws enforced in the State of Kuwait. Any conflict which may arise in relation hereto shall be referred to the competent Kuwaiti Courts.
+                        </p>
+                    </div>
+  
+                    <div class="tandc001">
+                        <label>22.	Preferred Copy:</label><br>
+                        <p>
+                            In the event a contradiction was detected between the Arabic copy and English copy of the present Contract, the Arabic copy shall be prioritized over the English copy.
+                        </p>
+                    </div>
+  
+                    <div class="tandc001">
+                        <label>23.	Acknowledgment:</label><br>
+                        <p>
+                            The Customer acknowledges hereby that he read and understood all the aforementioned articles as well as received the secret code which he/she shall keep it confidential on his/her own liability. 
+                        </p>
+                    </div>
+  
+                    <div class="tandc001">
+                        <p>
+                            For further information and inquiries, kindly contact the Customer Service Center on (121) or browse our website: <a href=""> www.ooredoo.kw.com </a> or visit any of <b>OOREDOO</b> branches.
+                        </p>
+                    </div>
+  
+                </div>
+            </div>
+  
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!--new popup sec end-->
+
+        <!--jquery-->
+        <script src="assets/css/vendor/vendors/jquery-3.6.0.min.js"></script>
+        <!-- Bootstrap Bundle-->
+        <script
+            src="assets/css/vendor/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+        <!-- swiper JS-->
+        <script src="assets/css/vendor/vendors/swiper/swiper.min.js"></script>
+        <!-- Menu js-->
+        <script src="assets/css/vendor/js/menu-script.js"></script>
+        <!--custom-->
+        <script src="assets/css/vendor/js/custom.js"></script>
+    </body>
+</html>

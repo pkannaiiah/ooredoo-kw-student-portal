@@ -1,0 +1,135 @@
+.select-number-search{
+  width: 100%;
+  background: $white;
+  border-top: 1px solid rgba(255,255,255, .2);
+  border-bottom: 1px solid rgba(255,255,255, .2);
+  position: sticky;
+  top: 0;
+  z-index: 195;
+  padding-top:20px;
+  h3{
+    color:$color-black;
+  }  
+}
+
+.main-filter-comp{
+h3{font-family:$bodytext;}
+.category-comp{margin:25px 5px 0px 0px;}
+.filter-comp{
+  text-align:center;
+  .filte-plane{width:50px;}
+  .mobile-filter-btn{display:none!important;}
+  ul {list-style-type:none;padding:0px;margin:20px 0px 0px 0px;display: flex;justify-content:space-between; flex-wrap:wrap;}
+  li {display:inline-block;width:56px;height:auto;margin:0px 10px 15px 0px;}
+  input[type="checkbox"][id^="myCheckbox"] {display:none;}
+  label {border:1px solid #fff;padding:10px 7px;display:block;
+    position:relative;margin:0px;cursor: pointer;border-radius:4px;
+  }
+  label:before {
+    background-color: $primary;
+    color: $color-white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid $primary;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+  }
+  label img{height:20px;width:100%;transition-duration:0.2s;transform-origin:50% 50%;}
+  :checked + label{border-color: $primary;}
+  :checked + label:before{content: "✓";background-color: $primary;transform: scale(1);font-size:$x-small;}
+  :checked + label img{transform: scale(0.9);z-index: -1;}
+  .filter-title{font-size:$xx-small;margin-top:10px;}
+}
+.mob-listhed{display:none}
+}
+
+///@at-root
+.main-filter-comp-new{
+  h3{font-family:$bodytext;}
+  .category-comp{margin:25px 5px 0px 0px;}
+  .filter-comp{
+    text-align:center;
+    .filte-plane{width:50px;display: flex; align-items: center;}
+    .mobile-filter-btn{display:block!important;}
+    ul {
+      list-style-type:none;padding:0px;margin:20px 0px 0px 0px;
+      display: flex;justify-content:space-between; flex-wrap:wrap;
+    }
+    li {display:inline-block;width:56px;height:auto;margin:0px 10px 15px 0px;}
+    input[type="checkbox"][id^="myCheckbox"] {display:none;}
+    label {padding:10px 7px;display:block;
+      //position:relative;
+      margin:0px;cursor: pointer;border-radius:4px;
+    }
+    label:before {
+      //background-color: $primary;
+      color: $color-white;
+      content: " "; 
+      display: block;
+      border-radius: 50%;
+      border: 1px solid $primary;
+      //position: absolute;
+      top: -5px;
+      right: -5px;
+      width: 26px;
+      height: 26px;
+      text-align: center;
+      line-height: 26px;
+      //transition-duration: 0.4s;
+      //transform: scale(0);
+      margin-right:10px;
+    }
+    label img{height:20px;width:100%;transition-duration:0.2s;transform-origin:50% 50%;}
+    :checked + label{border-color: #fff;}
+    :checked + label:before{
+      content: "✓";
+      background-color: $primary;
+      transform: scale(1);
+      font-size:$x-small; 
+      margin-right:10px;
+    }
+    :checked + label img{transform: scale(0.9);z-index: -1;}
+    .filter-title{font-size:$xx-small;margin-top:10px;}
+  }
+  .mob-listhed{display:none}
+  }
+
+.sectiontitle{margin-top:40px;}
+.filter-popup{
+  .modal-header{
+    border: 0px;
+    padding:34px 1rem 1rem 1rem;
+    h2{ color:$color-black;}
+  }
+  .filter-fot{padding:15px; border-top:1px solid #EEEEEE;display: flex;justify-content: space-between;} 
+}
+
+@media (max-width: 460.98px) {
+    .main-filter-comp{
+        .filter-comp{
+            .mobile-filter-btn{display:block!important;}
+            .modal-title{color:$color-black;}
+                ul{margin:5px 0px;}
+        }
+        .category-comp{margin:20px 5px 0px 0px;}
+        .category-web{display:none;}
+        .web-filter{display:none;}
+        .mob-listhed{display:block;margin-bottom:20px;}
+    }
+    .mob-list{display:none;}
+    .sectiontitle{margin-top:15px;margin-bottom:10px;}
+    .w80{width:100%}
+    .filter-popup{
+       .modal-header {
+      padding: 34px 1rem 20px 1rem;
+  }
+}
+}

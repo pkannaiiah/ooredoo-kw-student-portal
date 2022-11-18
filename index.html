@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Ooredoo-KW-Studen-Portal</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1,
+            maximum-scale=1, minimum-scale=1, width=device-width" />
+        <!--/* -- Brand Favicon -- */-->
+        <link rel="shortcut icon" href="assets/images/favicon.ico" />
+        <!-- Bootstrap CSS -->
+        <link href="assets/css/vendor/vendors/bootstrap/bootstrap.min.css"
+            rel="stylesheet">
+        <link href="assets/css/vendor/vendors/swiper/swiper.min.css"
+            rel="stylesheet">
+        <!--custom css-->
+        <link href="assets/css/main-en.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Section: Header -->
+        <header class="header">
+            <!--top header-->
+            <div class="top-header">
+                <div class="container">
+                  <div class="d-flex justify-content-between">
+                    <div class="">
+                    <a href="" class="active"> Personal  </a>
+                    <a href=""> Business  </a>
+                  </div>
+                  <div class="">
+                  <a href="" class="ml-auto"> English </a>
+                  </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="wrapper">
+                    <div class="header-item-left">
+                        <div class="brand">
+                            <picture>
+                              <img src="assets/images/ooredoologo.svg" alt="ana_logo" title="ana_logo" class="ooredoo-logo" />
+                            </picture>
+                        </div>
+                    </div>
+                    <!-- Section: Navbar Menu -->
+                    <div class="header-item-center">
+                      <div class="overlay"></div>
+                      <nav class="menu ml-auto">
+                          <div class="menu-mobile-header">
+                              <button type="button" class="menu-mobile-arrow">
+                                  <i class="ion ion-ios-arrow-back"></i>
+                              </button>
+                              <div class="menu-mobile-title"></div>
+                              <button type="button" class="menu-mobile-close">
+                                  <img
+                                      src="assets/images/icons/close-icon.svg"
+                                      alt="close" title="close" />
+                              </button>
+                          </div>
+                          <!--ul class="menu-section">
+                                <li class="menu-item-has-children">
+                                    <a href="#">Ooredoo Website</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Build My Plan </a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Why Ooredoo?</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Special Plans </a>
+                                </li>
+                                <li><a href="#">Order Tracker</a></li>
+                                <li>
+                                    <a style="font-family: 'OoredooArabic-Heavy','OoredooArabic','ooredoo-Heavy','noto_sansregular';" href="#" ng-click="changlangurl('ar')">عربى</a>
+                                </li>
+                            </ul-->
+                      </nav>
+                  </div>
+
+                    <div class="">
+                        <button type="button" class="menu-mobile-trigger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main headtop-mt160">
+            <div class="max-container">
+
+                <div class="container">
+                    <div class="postpaid-cont review-cont">
+                        <div class="form-details">
+
+                        <div class="global-tilte-cont mb-40">
+                            <p class="sec-title">Personal Details</p>
+                            <h5 class="text-secondary m-0">Please complete the from</h5>
+                        </div>
+
+                        <div class="post-form mb-40">
+                              <div class="mb-3">
+                                <label class="form-label">First Name</label>
+                                <input type="text" class="form-control form-control-lg" placeholder="" onkeydown="limit(this, 30);" onkeyup="limit(this, 30);">
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" class="form-control form-control-lg" placeholder="" onkeydown="limit(this, 30);" onkeyup="limit(this, 30);">
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label">Civil ID</label>
+                                <input type="text" class="form-control form-control-lg" placeholder="" onkeydown="limit(this, 30);" onkeyup="limit(this, 30);">
+                              </div>
+                              <div class="row mb-3">                                
+                                <div class="col-6">
+                                <label class="form-label">Expiration Date</label>
+                                  <input type="text" class="form-control form-control-lg" onkeydown="limit(this, 30);" onkeyup="limit(this, 30);">
+                                </div>
+                                <div class="col-6">
+                                <label class="form-label">Date of Birth</label>
+                                  <input type="text" class="form-control form-control-lg" onkeydown="limit(this, 30);" onkeyup="limit(this, 30);">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <form>
+                                <label class="form-label">Email address</label>
+                                <input type="email" class="form-control form-control-lg" placeholder="" onkeydown="limit(this, 25);" onkeyup="limit(this, 25);">
+                                <div id="emailHelp" class="form-text blet-sec">
+                                    <label> Note: </label> Its important to enter a valid Email address in order to receive the purchase confirmation Email</div>
+                              </div>
+                            <div class="mb-3">
+                                <label class="form-label">Nationality</label>
+                                <select class="form-select form-select-lg mb-3">
+                                    <option class="slected1" value="" disabled selected>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                              </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Additional direction (optional)</label>
+                                <input type="text" class="form-control form-control-lg" placeholder="" onkeydown="limit(this, 30);" onkeyup="limit(this, 30);">
+                            </div>
+
+
+                            <div class="radiobtn-comp mb-4">
+                                <p  class="form-label">Gender </p>
+    
+                                <div class="d-flex vip-number-radiobtn vip-number-gender mt-2">
+                                <div class="radio mr-4">
+                                  <input id="male" name="radio" type="radio" checked>
+                                  <label for="male" class="radio-label">Male</label>
+                                </div>
+                              
+                                <div class="radio">
+                                  <input id="female" name="radio" type="radio">
+                                  <label  for="female" class="radio-label">Female</label>
+                                </div>
+                             </div>
+    
+                              </div>
+    
+                            <!--:::::file uploading section st:::::-->
+                    <div class="textfiled file-upload-comp okw-file-uploadsection postpaid-cont">
+                        <div class="file-upload">
+                          <p class="form-label"> Civil ID (Front side)*</p>
+                          <!--button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button-->
+                          <div class="image-upload-wrap">
+                            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                            <div class="drag-text">
+                             <div class="file-upload-img-icon">
+                                 <img src="assets/images/icons/photo-camera.svg" alt="" title="">
+                                 <div class="addimgupload">ADD Photo</div>
+                            </div>
+                            </div>
+                          </div>
+                          <div class="file-upload-content">
+                            <div class="row pad0px">
+                              <div class="col-4 col-md-4">
+                              <img class="file-upload-image" src="#" alt="your image" />
+                            </div>
+                              <div class="col-8 col-md-8 image-title-wrap text-right">
+                                <button type="button" onclick="removeUpload()" class="remove-image">  
+                                  <span class="image-title"> Uploaded Image </span>
+                                  <img src="assets/images/icons/photo-camera.svg" title="upload camera" alt="upload camera"> Delete
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="note-text">JPG, JPEG, PNG format</p>
+                        </div>
+                        
+                        <div class="file-upload agile-field-txt">
+                          <p class="form-label"> Civil ID (Back side)* </p>
+                          <div class="image-upload-wrap">
+                            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                            <div class="drag-text">
+                             <div class="file-upload-img-icon"><img src="assets/images/icons/photo-camera.svg" alt="upload camera" title="upload camera">
+                             <div class="addimgupload">ADD Photo</div>
+                            </div>
+                            </div>
+                          </div>
+                          <div class="file-upload-content">
+                            <div class="row pad0px">
+                            <div class="col-4 col-md-4">
+                            <img class="file-upload-image" src="#" alt="your image" />
+                          </div>
+                            <div class="col-8 col-md-8 image-title-wrap text-right">
+                              <button type="button" onclick="removeUpload()" class="remove-image"> 
+                                <span class="image-title"> Uploaded Image </span>
+                                <img src="assets/paci-mobileid-images/delete-icon.svg" title="" alt=""> Delete
+                              </button>
+                            </div>
+                          </div>
+                          </div>
+                          <p class="note-text">JPG, JPEG, PNG format</p>
+                        </div>
+      
+                      </div>
+                      <!--:::::file uploading section end:::::-->
+                              
+                        </div>
+                    </div>
+
+                    <div class="hline"></div>
+                    <div class="total-cont foo-fixed">
+                        <div class="total">
+                            <div class="plan-details">
+                                <div class="plan-cont">
+                                    <img class="activeimg" src="assets/images/icons/ic_eshop.svg" alt="">
+                                    <span class="plan">
+                                        <span class="plan-text">Shamel 5 eShop Exclusive </span><br>
+                                        <span class="total-text">Total: KD 5/month</span><br>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-cont d-flex justify-content-between">
+                            <a class="btn btn-secondary btn-secondary-oh">Back</a>
+                            <a class="btn btn-primary btn-primary-oh" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Continue</a>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!--popup st-->
+        <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="success-cont text-center">
+          <div class="img-cont">
+              <img src="assets/images/icons/ic_success_icon.svg" alt="">
+          </div>
+          <div class="success-textcont">
+              <p class="success-text">Nice! Your plan will be processed soon.</p>                           
+          </div>
+      </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-between b-0">
+        <div class="mr-auto">
+        <button type="button" class="btn btn-secondary btn-btn-secondary-oh mr-auto" data-bs-dismiss="modal">Close</button>
+      </div>
+      <div class="ml-auto">
+        <button type="button" class="btn btn-primary btn-primary-oh ml-auto">Understood</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <!--popup st-->
+
+        <!--jquery-->
+        <script src="assets/css/vendor/vendors/jquery-3.6.0.min.js"></script>
+        <!-- Bootstrap Bundle-->
+        <script src="assets/css/vendor/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+        <!-- swiper JS-->
+        <script src="assets/css/vendor/vendors/swiper/swiper.min.js"></script>
+        <!-- Menu js-->
+        <script src="assets/css/vendor/js/menu-script.js"></script>
+        <!--custom-->
+        <script src="assets/css/vendor/js/custom.js"></script>
+
+    </body>
+</html>
