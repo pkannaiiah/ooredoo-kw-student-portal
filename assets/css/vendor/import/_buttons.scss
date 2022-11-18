@@ -36,15 +36,15 @@
 
   .btn-secondary {
     background-color:$color-white;
-    border-color: $color-black; 
-    color:  $color-black;
+    border-color: $primary; 
+    color:  $primary;
     
     &:link {
       color: $color-black;
     }
     &:hover {
-      background-color: $color-black;
-      border-color: $color-black; 
+      background-color: $primary;
+      border-color: $primary; 
       color: $color-white;
     }
     &:active {
@@ -131,7 +131,7 @@
   }
   .btn-secondary-oh {
     font-family:$headding;
-    font-size:$x-small;
+    font-size:$small;
   }
 
   //show more btn

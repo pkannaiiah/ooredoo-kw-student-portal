@@ -24,7 +24,7 @@ font-family:$headding;font-weight:bold;
     font-style: normal;
 }
 h2,.h2{
-    font-size: $xxx-large;
+    font-size: 22px;
     line-height: 36px;
 }
 h4,.h4{
@@ -34,8 +34,10 @@ h4,.h4{
     color: $color-black;
 }
 h5,.h5{
-    font-size: $small;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: normal;
+    color:#101010;
 }
 h6,.h6{
     font-size: $x-small;
