@@ -336,7 +336,7 @@ input[type=number] {
 }
 
 .checkbox-comp label {
-  font-size: 12px !important;
+  font-size: 16px !important;
   line-height: 20px !important;
 }
 .checkbox-comp .chebox-comp input[type=checkbox] + label::before {
@@ -421,6 +421,31 @@ input[type=number] {
 
 .plan_body {
   padding: 10px;
+}
+
+.font14bold {
+  font-family: "Rubik-Bold", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #221E20;
+}
+
+.font14reg {
+  font-family: "Rubik-Regular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #221E20;
+}
+
+.font16reg {
+  font-family: "Rubik-Regular", Arial, Helvetica, sans-serif;
+  font-size: 16px !important;
+  color: #221E20;
+}
+
+.plan {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 150px;
 }
 
 @media (max-width: 480px) {
@@ -686,10 +711,10 @@ h6, .h6 {
   border: 0.1em solid #EBEBEB;
   border-radius: 0.2em;
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  padding-left: 0.4em;
-  padding-bottom: 0.3em;
+  width: 24px;
+  height: 24px;
+  padding-left: 0;
+  padding-bottom: 0;
   margin-right: 10px;
   vertical-align: bottom;
   color: transparent;
