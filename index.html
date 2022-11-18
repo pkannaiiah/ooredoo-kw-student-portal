@@ -103,157 +103,70 @@
             <div class="max-container">
 
                 <div class="container">
-                    <div class="postpaid-cont review-cont">
-                        <div class="form-details">
+                    <div class="student-portal review-cont">
 
-                        <div class="global-tilte-cont mb-40">
-                            <p class="sec-title">Personal Details</p>
-                            <h5 class="text-secondary m-0">Please complete the from</h5>
-                        </div>
-
-                        <div class="post-form mb-40">
-                              <div class="mb-3">
-                                <label class="form-label">First Name</label>
-                                <input type="text" class="form-control form-control-lg" placeholder="" onkeydown="limit(this, 30);" onkeyup="limit(this, 30);">
-                              </div>
-                              <div class="mb-3">
-                                <label class="form-label">Last Name</label>
-                                <input type="text" class="form-control form-control-lg" placeholder="" onkeydown="limit(this, 30);" onkeyup="limit(this, 30);">
-                              </div>
-                              <div class="mb-3">
-                                <label class="form-label">Civil ID</label>
-                                <input type="text" class="form-control form-control-lg" placeholder="" onkeydown="limit(this, 30);" onkeyup="limit(this, 30);">
-                              </div>
-                              <div class="row mb-3">                                
-                                <div class="col-6">
-                                <label class="form-label">Expiration Date</label>
-                                  <input type="text" class="form-control form-control-lg" onkeydown="limit(this, 30);" onkeyup="limit(this, 30);">
-                                </div>
-                                <div class="col-6">
-                                <label class="form-label">Date of Birth</label>
-                                  <input type="text" class="form-control form-control-lg" onkeydown="limit(this, 30);" onkeyup="limit(this, 30);">
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <form>
-                                <label class="form-label">Email address</label>
-                                <input type="email" class="form-control form-control-lg" placeholder="" onkeydown="limit(this, 25);" onkeyup="limit(this, 25);">
-                                <div id="emailHelp" class="form-text blet-sec">
-                                    <label> Note: </label> Its important to enter a valid Email address in order to receive the purchase confirmation Email</div>
-                              </div>
-                            <div class="mb-3">
-                                <label class="form-label">Nationality</label>
-                                <select class="form-select form-select-lg mb-3">
-                                    <option class="slected1" value="" disabled selected>Select</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                  </select>
-                              </div>
-
-                            <div class="mb-3">
-                                <label class="form-label">Additional direction (optional)</label>
-                                <input type="text" class="form-control form-control-lg" placeholder="" onkeydown="limit(this, 30);" onkeyup="limit(this, 30);">
-                            </div>
-
-
-                            <div class="radiobtn-comp mb-4">
-                                <p  class="form-label">Gender </p>
-    
-                                <div class="d-flex vip-number-radiobtn vip-number-gender mt-2">
-                                <div class="radio mr-4">
-                                  <input id="male" name="radio" type="radio" checked>
-                                  <label for="male" class="radio-label">Male</label>
-                                </div>
-                              
-                                <div class="radio">
-                                  <input id="female" name="radio" type="radio">
-                                  <label  for="female" class="radio-label">Female</label>
-                                </div>
-                             </div>
-    
-                              </div>
-    
-                            <!--:::::file uploading section st:::::-->
-                    <div class="textfiled file-upload-comp okw-file-uploadsection postpaid-cont">
-                        <div class="file-upload">
-                          <p class="form-label"> Civil ID (Front side)*</p>
-                          <!--button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button-->
-                          <div class="image-upload-wrap">
-                            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
-                            <div class="drag-text">
-                             <div class="file-upload-img-icon">
-                                 <img src="assets/images/icons/photo-camera.svg" alt="" title="">
-                                 <div class="addimgupload">ADD Photo</div>
-                            </div>
-                            </div>
-                          </div>
-                          <div class="file-upload-content">
-                            <div class="row pad0px">
-                              <div class="col-4 col-md-4">
-                              <img class="file-upload-image" src="#" alt="your image" />
-                            </div>
-                              <div class="col-8 col-md-8 image-title-wrap text-right">
-                                <button type="button" onclick="removeUpload()" class="remove-image">  
-                                  <span class="image-title"> Uploaded Image </span>
-                                  <img src="assets/images/icons/photo-camera.svg" title="upload camera" alt="upload camera"> Delete
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                          <p class="note-text">JPG, JPEG, PNG format</p>
-                        </div>
-                        
-                        <div class="file-upload agile-field-txt">
-                          <p class="form-label"> Civil ID (Back side)* </p>
-                          <div class="image-upload-wrap">
-                            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
-                            <div class="drag-text">
-                             <div class="file-upload-img-icon"><img src="assets/images/icons/photo-camera.svg" alt="upload camera" title="upload camera">
-                             <div class="addimgupload">ADD Photo</div>
-                            </div>
-                            </div>
-                          </div>
-                          <div class="file-upload-content">
-                            <div class="row pad0px">
-                            <div class="col-4 col-md-4">
-                            <img class="file-upload-image" src="#" alt="your image" />
-                          </div>
-                            <div class="col-8 col-md-8 image-title-wrap text-right">
-                              <button type="button" onclick="removeUpload()" class="remove-image"> 
-                                <span class="image-title"> Uploaded Image </span>
-                                <img src="assets/paci-mobileid-images/delete-icon.svg" title="" alt=""> Delete
-                              </button>
-                            </div>
-                          </div>
-                          </div>
-                          <p class="note-text">JPG, JPEG, PNG format</p>
-                        </div>
-      
-                      </div>
-                      <!--:::::file uploading section end:::::-->
-                              
-                        </div>
+                      <div class="global-tilte-cont mb-30">                     
+                        <h5 class="sec-title mb-2">Please select an offer below</h5>
+                        <p class="text-secondary">Student Offer</p>
                     </div>
 
-                    <div class="hline"></div>
-                    <div class="total-cont foo-fixed">
-                        <div class="total">
-                            <div class="plan-details">
-                                <div class="plan-cont">
-                                    <img class="activeimg" src="assets/images/icons/ic_eshop.svg" alt="">
-                                    <span class="plan">
-                                        <span class="plan-text">Shamel 5 eShop Exclusive </span><br>
-                                        <span class="total-text">Total: KD 5/month</span><br>
-                                    </span>
+                          <div class="row row-cols-1 row-cols-md-1 studen-offer-card justify-content-center g-4">
+
+                            <div class="col">
+                              <div class="card h-100">
+                                <div class="card-body">
+                                  <h5 class="card-title mb-2">Roaming SIM for Students</h5>
+                                  <div class="card-text mb-1"> Unlimited Local Minutes </div>
+                                  <div class="card-text mb-1"> 5G 100GB / Month Local Internet </div>
+                                  <div class="card-text mb-1"> 1800 Minutes Roaming Call </div>
+                                  <div class="card-text mb-1"> 1 Year Validity </div>
+                                  <div class="offer-packam mt-3">
+                                    <div>KD <label>99</label></div>
+                                  </div>
                                 </div>
+                                <div class="card-footer text-center">
+                                  <a class="btn btn-primary btn-primary-oh ">Buy</a>
+                                </div>
+                              </div>
                             </div>
-                        </div>
-                        <div class="btn-cont d-flex justify-content-between">
-                            <a class="btn btn-secondary btn-secondary-oh">Back</a>
-                            <a class="btn btn-primary btn-primary-oh" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Continue</a>
-                        </div>
-                    </div>
+                            
+                            <div class="col">
+                              <div class="card h-100">
+                                <div class="card-body">
+                                  <h5 class="card-title mb-2">Roaming SIM for Students</h5>
+                                  <div class="card-text mb-1"> Unlimited Local Minutes </div>
+                                  <div class="card-text mb-1"> 5G 100GB / Month Local Internet </div>
+                                  <div class="card-text mb-1"> 1800 Minutes Roaming Call </div>
+                                  <div class="card-text mb-1"> 1 Year Validity </div>
+                                  <div class="offer-packam mt-3">
+                                    <div>KD <label>99</label></div>
+                                  </div>
+                                </div>
+                                <div class="card-footer text-center">
+                                  <a class="btn btn-primary btn-primary-oh ">Buy</a>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col">
+                              <div class="card h-100">
+                                <div class="card-body">
+                                  <h5 class="card-title mb-2">Roaming SIM for Students</h5>
+                                  <div class="card-text mb-1"> Unlimited Local Minutes </div>
+                                  <div class="card-text mb-1"> 5G 100GB / Month Local Internet </div>
+                                  <div class="card-text mb-1"> 1800 Minutes Roaming Call </div>
+                                  <div class="card-text mb-1"> 1 Year Validity </div>
+                                  <div class="offer-packam mt-3">
+                                    <div>KD <label>99</label></div>
+                                  </div>
+                                </div>
+                                <div class="card-footer text-center">
+                                  <a class="btn btn-primary btn-primary-oh ">Buy</a>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
 
                     </div>
                 </div>
@@ -261,8 +174,7 @@
             </div>
         </main>
 
-        <!--popup st-->
-        <!-- Modal -->
+        <!--Modal Popup ST-->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -291,8 +203,7 @@
     </div>
   </div>
 </div>
-
-        <!--popup st-->
+<!--Modal Popup End-->
 
         <!--jquery-->
         <script src="assets/css/vendor/vendors/jquery-3.6.0.min.js"></script>

@@ -59,8 +59,33 @@ input[type=number] {
 //popup button
 .popup-bottom{max-width:960px;border-radius:8px 8px 0px 0px!important;margin:0 auto;}
 
+.studen-offer-card{
+  .card{box-shadow: 0 2px 6px #E3E3E3; border-radius:16px;}
+  .card-body{padding:13px 82px;}
+  .card-footer {
+    padding:1rem;
+    background-color: transparent;
+    border-top: 1px solid #E3E3E3;
+  }
+  .offer-packam{
+    font-family:$headding;
+    font-size: 18px;
+    label{font-size:28px;margin:0px; padding:0px;color:$primary;}
+  }
+}
+.student-top-comp{  
+  border-top:2px solid $primary;
+  color: $color-night;
+  align-items: center;
+}
+
 @media (max-width: 480px){
   main{margin-top:35px;}
   .mt40{margin-top:40px;}
   .update-details-comp{top:85px;}
+
+  .studen-offer-card{
+    .card{box-shadow: 0 2px 6px #E3E3E3; border-radius:16px;}
+    .card-body{padding:13px 50px;}
+  }
 }

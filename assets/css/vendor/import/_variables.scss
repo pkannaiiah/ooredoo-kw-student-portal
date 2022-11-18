@@ -1,12 +1,5 @@
  // GLOBAL VARIABLES
  @font-face {
-    font-family: 'ooredoo-heavy';
-    src: url('fonts/Ooredoo-Heavy.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
- @font-face {
     font-family: 'NotoRegular';
     src: url('fonts/noto_sansregular.woff') format('woff');
     font-weight: normal;
@@ -68,13 +61,6 @@
     font-display: swap;
 }
 @font-face{
-	font-family:'MyriadPro-Regular';
-	src:url(fonts/MyriadPro-Regular.woff) format("woff");
-	/*font-weight: normal;*/
-    font-style: normal;
-    font-display: swap;
-}
-@font-face{
 	font-family:'Outfit-Black';
 	src:url(fonts/Outfit-Black.woff) format("woff");
 	/*font-weight: normal;*/
@@ -84,12 +70,14 @@
 /*27-06-22 end*/
 
 // Ooredoo Font family
-$headding:'ooredoo-heavy', Arial, Helvetica, sans-serif;
-$bodytext:'NotoRegular', Arial, Helvetica, sans-serif;
-$thintext:'Notolight', Arial, Helvetica, sans-serif;
-$boldtext:'Notobold', Arial, Helvetica, sans-serif;
+$headding:'Rubik-Bold', Arial, Helvetica, sans-serif;
+$bodytext:'Rubik-Regular', Arial, Helvetica, sans-serif;
+$thintext:'Rubik-Medium', Arial, Helvetica, sans-serif;
+$boldtext:'Rubik-SemiBold', Arial, Helvetica, sans-serif;
 
-$rubik-regular:"";
+$noto-reg:'NotoRegular', Arial, Helvetica, sans-serif;
+$notolight:'Notolight', Arial, Helvetica, sans-serif;
+$notobold:'Notobold', Arial, Helvetica, sans-serif;
 
 $xx-small:10px;/*10px*/
 $x-small:12px;/*12px*/
@@ -110,7 +98,7 @@ $secondary: #221E20;
 $color-white: #ffffff;
 $color-light: #f1f5f8;
 $color-black: #221E20;
-$color-night: #001632;
+$color-night: #333F48;
 $color-blue: #2196f3;
 $white: #fff;
 $dark-gray: #858585;
