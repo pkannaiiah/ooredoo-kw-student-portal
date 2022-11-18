@@ -83,6 +83,10 @@ hr {
   margin-bottom: 30px;
 }
 
+.mb-80 {
+  margin-bottom: 80px;
+}
+
 .w80 {
   width: 80%;
 }
@@ -91,8 +95,20 @@ hr {
   margin-top: 95px;
 }
 
+.headtop-mt120 {
+  margin-top: 120px;
+}
+
+.headtop-mt130 {
+  margin-top: 130px;
+}
+
 .headtop-mt160 {
-  margin-top: 190px;
+  margin-top: 160px;
+}
+
+.headtop-mt180 {
+  margin-top: 180px;
 }
 
 @-webkit-keyframes slideLeft {
@@ -192,6 +208,21 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+::-moz-placeholder {
+  font-family: "Notolight", Arial, Helvetica, sans-serif !important;
+  font-size: 14px !important;
+}
+
+:-ms-input-placeholder {
+  font-family: "Notolight", Arial, Helvetica, sans-serif !important;
+  font-size: 14px !important;
+}
+
+::placeholder {
+  font-family: "Notolight", Arial, Helvetica, sans-serif !important;
+  font-size: 14px !important;
+}
+
 .mt40 {
   margin-top: 50px;
 }
@@ -229,7 +260,7 @@ hr {
   border: 0px solid #fff;
 }
 .modal-header h5 {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Rubik-Bold", Arial, Helvetica, sans-serif;
   text-align: center;
   width: 100%;
@@ -327,10 +358,10 @@ input[type=number] {
   border-radius: 16px;
 }
 .studen-offer-card .card-body {
-  padding: 13px 82px;
+  padding: 16px;
 }
 .studen-offer-card .card-footer {
-  padding: 1rem;
+  padding: 11px 11px 13px 11px;
   background-color: transparent;
   border-top: 1px solid #E3E3E3;
 }
@@ -346,9 +377,20 @@ input[type=number] {
 }
 
 .student-top-comp {
-  border-top: 2px solid #ed1c24;
+  border-top: 0px solid #ed1c24;
   color: #333F48;
   align-items: center;
+  position: absolute;
+  bottom: -57px;
+  width: 100%;
+  background: #E9E9E9;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+.student-top-comp img {
+  width: 39px;
+  height: 39px;
 }
 
 .plan_border {
@@ -404,7 +446,7 @@ input[type=number] {
     border-radius: 16px;
   }
   .studen-offer-card .card-body {
-    padding: 13px 50px;
+    padding: 13px 16px;
   }
 }
 .btn {
@@ -443,15 +485,15 @@ input[type=number] {
 
 .btn-secondary {
   background-color: #ffffff;
-  border-color: #221E20;
-  color: #221E20;
+  border-color: #ed1c24;
+  color: #ed1c24;
 }
 .btn-secondary:link {
   color: #221E20;
 }
 .btn-secondary:hover {
-  background-color: #221E20;
-  border-color: #221E20;
+  background-color: #ed1c24;
+  border-color: #ed1c24;
   color: #ffffff;
 }
 .btn-secondary:active {
@@ -532,7 +574,7 @@ input[type=number] {
 
 .btn-secondary-oh {
   font-family: "Rubik-Bold", Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .loadmore-btn {
@@ -611,7 +653,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 h2, .h2 {
-  font-size: 30px;
+  font-size: 22px;
   line-height: 36px;
 }
 
@@ -623,8 +665,10 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: normal;
+  color: #101010;
 }
 
 h6, .h6 {
@@ -698,7 +742,7 @@ h6, .h6 {
   font-size: 14px;
   width: 100%;
   height: 40px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #333F48;
   border-radius: 4px;
   padding: 0px 30px 0px 15px;
 }
@@ -958,7 +1002,7 @@ h6, .h6 {
 
 .top-header {
   font-size: 14px;
-  font-family: "Rubik-Bold", Arial, Helvetica, sans-serif;
+  font-family: "NotoRegular", Arial, Helvetica, sans-serif;
   display: flex;
   flex-wrap: nowrap;
   white-space: nowrap;
@@ -969,7 +1013,7 @@ h6, .h6 {
 .top-header a {
   color: #221E20;
   text-decoration: none;
-  margin-right: 12px;
+  margin-right: 10px;
 }
 .top-header a:hover {
   color: #ed1c24;
@@ -981,7 +1025,7 @@ h6, .h6 {
 }
 
 .brand {
-  padding: 10px 0px;
+  padding: 5px 0px;
 }
 .brand img {
   width: 180px;
@@ -1013,6 +1057,7 @@ h6, .h6 {
   border: none;
   outline: none;
   background: #ffffff;
+  border-bottom: 2px solid #ed1c24;
 }
 .header .wrapper {
   display: flex;
@@ -1403,7 +1448,7 @@ h6, .h6 {
 }
 @media only screen and (max-width: 360px) {
   .brand img {
-    min-width: 150px;
+    min-width: 180px;
   }
 }
 .main-banner-comp img {
@@ -1920,7 +1965,7 @@ a.has-sub[aria-expanded=true]:after {
 }
 
 .text-secondary {
-  color: #221e20 !important;
+  color: #333F48 !important;
 }
 
 ::-webkit-input-placeholder {
@@ -2041,7 +2086,7 @@ a.has-sub[aria-expanded=true]:after {
 }
 .enter-detail-cont .vip-cont .form-control:focus {
   box-shadow: none;
-  border-color: #aaa;
+  border-color: #333F48;
 }
 .enter-detail-cont .vip-search-section {
   margin-top: 40px;
@@ -2058,7 +2103,7 @@ a.has-sub[aria-expanded=true]:after {
 .review-cont .text-secondary {
   font-family: "NotoRegular", Arial, Helvetica, sans-serif;
   font-size: 14px;
-  color: #221e20 !important;
+  color: #333F48 !important;
   line-height: 19px;
 }
 .review-cont .activesim {
@@ -2297,12 +2342,13 @@ a.has-sub[aria-expanded=true]:after {
 }
 .student-portal .posttitle-cont .sec-title {
   margin: 0;
+  font-weight: normal;
 }
 .student-portal .form-label {
   font-size: 12px;
   font-family: "Rubik-Bold", Arial, Helvetica, sans-serif;
   margin-bottom: 5px;
-  color: #858585;
+  color: #333F48;
   text-transform: uppercase;
 }
 .student-portal .form-control-lg, .student-portal .form-select-lg {
@@ -2311,11 +2357,11 @@ a.has-sub[aria-expanded=true]:after {
 }
 .student-portal .form-control {
   border-radius: 3px;
-  border-color: #e0e0e0;
+  border-color: #333F48;
 }
 .student-portal .form-control:focus {
   box-shadow: none;
-  border-color: #aaa;
+  border-color: #333F48;
 }
 .student-portal .form-select:focus {
   box-shadow: none;
@@ -2340,6 +2386,8 @@ a.has-sub[aria-expanded=true]:after {
   font-family: "Rubik-Regular", Arial, Helvetica, sans-serif;
   font-size: 22px;
   margin-bottom: 5px;
+  font-weight: normal;
+  color: #221e20;
 }
 
 .pay-cont .filter-comp {
@@ -2348,6 +2396,9 @@ a.has-sub[aria-expanded=true]:after {
 }
 .pay-cont .filter-comp .filte-plane {
   width: 100%;
+}
+.pay-cont .filter-comp .filte-plane h5 {
+  font-size: 14px;
 }
 .pay-cont .filter-comp li {
   width: 100%;

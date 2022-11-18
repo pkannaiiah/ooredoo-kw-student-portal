@@ -21,7 +21,7 @@ color:#ED1C24!important;
     margin-bottom: 40px;
 }
 .text-secondary {
-    color: #221e20 !important;
+    color: #333F48 !important;
 }
 
 ::-webkit-input-placeholder {
@@ -150,7 +150,7 @@ color:#ED1C24!important;
         .form-control {
             &:focus {
                 box-shadow: none;
-                border-color: #aaa;
+                border-color: #333F48;
             }
         }
     }
@@ -172,7 +172,7 @@ color:#ED1C24!important;
     .text-secondary {
         font-family:$noto-reg;
         font-size:14px;
-        color: #221e20 !important;
+        color: #333F48 !important;
         line-height:19px;
     }
     .activesim {
@@ -439,6 +439,7 @@ color:#ED1C24!important;
         margin-bottom: 30px;
         .sec-title{
             margin: 0;
+            font-weight: normal;
         }
     }
 
@@ -446,7 +447,7 @@ color:#ED1C24!important;
         font-size: $x-small;
         font-family: $headding;
         margin-bottom: 5px;
-        color: #858585;
+        color: #333F48;
         text-transform: uppercase;
     }
     .form-control-lg, .form-select-lg {
@@ -455,10 +456,10 @@ color:#ED1C24!important;
     }
     .form-control {
         border-radius: 3px;
-        border-color: #e0e0e0;
+        border-color: #333F48;
         &:focus {
             box-shadow: none;
-            border-color: #aaa;
+            border-color: #333F48;
         }
     }
     .form-select:focus {
@@ -487,6 +488,8 @@ color:#ED1C24!important;
         font-family:$bodytext;
         font-size: 22px;
         margin-bottom: 5px;
+        font-weight: normal;
+        color: #221e20;
     }
 }
 
@@ -496,6 +499,7 @@ color:#ED1C24!important;
         padding: 0;
         .filte-plane{
             width: 100%;
+            h5{font-size:14px;}
         }
         
         li {
