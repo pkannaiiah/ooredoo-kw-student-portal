@@ -387,10 +387,26 @@ input[type=number] {
   text-align: center;
   justify-content: center;
   display: flex;
+  padding: 8px 16px;
 }
 .student-top-comp img {
   width: 39px;
   height: 39px;
+}
+
+.bg-comp {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.bottom_bg_section_container {
+  max-width: 398px;
+  margin: 0px auto;
 }
 
 .plan_border {
@@ -423,6 +439,9 @@ input[type=number] {
   }
   .studen-offer-card .card-body {
     padding: 13px 16px;
+  }
+  .student-top-comp {
+    justify-content: left;
   }
 }
 .btn {
@@ -2306,7 +2325,7 @@ a.has-sub[aria-expanded=true]:after {
   margin-top: 40px;
 }
 .captureid-cont .success-cont .success-textcont .success-text {
-  font-family: "Rubik-Medium", Arial, Helvetica, sans-serif;
+  font-family: "NotoRegular", Arial, Helvetica, sans-serif;
   font-size: 26px;
 }
 .captureid-cont .pay-cont input[type=radio] {
